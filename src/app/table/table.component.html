@@ -1,0 +1,32 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Brand Name</th>
+            <th scope="col">Model Name</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr app-table-line
+            [id]="cars[0].id"
+            [brandname]="cars[0].brandname"
+            [modelname]="cars[0].modelname"
+            (onClickShowDetail)="showDetailsSectedCar($event)"
+        >
+        </tr>
+
+        <tr app-table-line
+            [id]="cars[1].id"
+            [brandname]="cars[1].brandname"
+            [modelname]="cars[1].modelname"
+            (onClickShowDetail)="showDetailsSectedCar($event)"
+
+        >
+        </tr>
+
+        
+
+    </tbody>
+</table>

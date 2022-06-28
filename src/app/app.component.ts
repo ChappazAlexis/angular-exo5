@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'exo-5';
+  car: any;
+
+  constructor() {
+    this.car = {
+      brandname: 'Chargement...',
+      modelname: 'Chargement...'
+    };
+  }
+    updateSelectedCar(car: any) {
+      this.car = car;
+  }
 }
